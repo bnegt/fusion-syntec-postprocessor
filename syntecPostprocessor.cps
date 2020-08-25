@@ -235,7 +235,8 @@ function onOpen() {
   // absolute coordinates and feed per min
   writeBlock(gAbsIncModal.format(90), gFeedModeModal.format(94));
   writeBlock(gPlaneModal.format(17));
-
+  writeBlock(onPassThrough("M70"));
+  
   switch (unit) {
   case IN:
     writeBlock(gUnitModal.format(20));
